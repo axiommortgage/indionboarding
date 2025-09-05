@@ -20,11 +20,12 @@ import {
   DropdownMenuTrigger,
   DropdownMenuSeparator,
 } from "@/shared/ui/dropdown-menu";
-import { LogOut, User, ChevronDown } from "lucide-react";
-import { NavMain } from "./nav-main";
-import { getNavigationGroups } from "@/shared/lib/navigation";
+import { LogOut, User, ChevronDown, LayoutDashboard, Users, HelpCircle } from "lucide-react";
+import { FormsNav } from "./forms-nav";
 import { User as UserType } from "@/shared/types/auth";
 import { useAuthContext } from "@/shared/contexts/auth-context";
+import { useFormsContext } from "@/shared/contexts/forms-context";
+import Link from "next/link";
 
 interface AppSidebarProps extends React.ComponentProps<typeof Sidebar> {
   user: UserType;
@@ -39,47 +40,6 @@ export function AppSidebar({
   ...props
 }: AppSidebarProps) {
   const { userAuth } = useAuthContext();
-
-  // Get navigation with dynamic onePages data
-  const navigationGroups = React.useMemo(() => {
-    // Debug: Log the onePages data
-    console.log("AppSidebar: userAuth.onePages:", userAuth.onePages);
-    console.log("AppSidebar: userAuth.onePages type:", typeof userAuth.onePages);
-    console.log("AppSidebar: userAuth.onePages length:", userAuth.onePages?.length);
-    
-    // Ensure onePages is an array before passing to navigation
-    const safeOnePages = Array.isArray(userAuth.onePages)
-      ? userAuth.onePages
-      : [];
-
-    // Additional validation for onePages items
-    const validatedOnePages = safeOnePages.filter((page) => {
-      if (!page || typeof page !== "object") {
-        console.warn("Invalid onePage object:", page);
-        return false;
-      }
-      if (!page.Title || typeof page.Title !== "string") {
-        console.warn("Invalid onePage Title:", page);
-        return false;
-      }
-      if (!page.slug || typeof page.slug !== "string") {
-        console.warn("Invalid onePage slug:", page);
-        return false;
-      }
-      return true;
-    });
-
-    console.log("AppSidebar: Validated onePages:", validatedOnePages);
-
-    try {
-      const navigation = getNavigationGroups(validatedOnePages);
-      console.log("AppSidebar: Generated navigation:", navigation);
-      return navigation;
-    } catch (error) {
-      console.error("Error generating navigation groups:", error);
-      return getNavigationGroups([]); // Fallback to empty navigation
-    }
-  }, [userAuth.onePages, userAuth.initialized]);
 
   // Don't render if auth is not initialized
   if (!userAuth.initialized) {
@@ -108,9 +68,34 @@ export function AppSidebar({
         </SidebarMenu>
       </SidebarHeader>
       <SidebarContent>
-        {navigationGroups.map((group, index) => (
-          <NavMain key={index} title={group.label} items={group.items} />
-        ))}
+        {/* Forms Navigation */}
+        <FormsNav />
+
+        {/* Additional Menu Items */}
+        <SidebarMenu>
+          <SidebarMenuItem>
+            <SidebarMenuButton asChild>
+              <Link href="/dashboard">
+                <LayoutDashboard className="h-4 w-4" />
+                <span>Dashboard</span>
+              </Link>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
+            <SidebarMenuButton asChild>
+              <Link href="/support-team">
+                <Users className="h-4 w-4" />
+                <span>Your Support Team</span>
+              </Link>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
+            <SidebarMenuButton onClick={onLogout}>
+              <LogOut className="h-4 w-4" />
+              <span>Logout</span>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+        </SidebarMenu>
       </SidebarContent>
       <SidebarFooter>
         <SidebarMenu>

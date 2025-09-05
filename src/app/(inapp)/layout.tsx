@@ -9,8 +9,11 @@ import { Header } from "@/shared/ui/header";
 import { AuthGuard } from "@/shared/components/auth-guard";
 import { ErrorBoundary } from "@/shared/components/error-boundary";
 import { useAuthContext } from "@/shared/contexts/auth-context";
+import { FormsProvider, useFormsContext } from "@/shared/contexts/forms-context";
+import { SaveAlert } from "@/shared/ui/save-alert";
+import { Complete } from "@/shared/ui/complete";
 import { Toaster } from "@/shared/ui/sonner";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 export default function DashboardLayout({
   children,
@@ -20,7 +23,9 @@ export default function DashboardLayout({
   return (
     <ErrorBoundary>
       <AuthGuard>
-        <DashboardContent>{children}</DashboardContent>
+        <FormsProvider>
+          <DashboardContent>{children}</DashboardContent>
+        </FormsProvider>
       </AuthGuard>
     </ErrorBoundary>
   );
@@ -28,12 +33,15 @@ export default function DashboardLayout({
 
 function DashboardContent({ children }: { children: React.ReactNode }) {
   const { userAuth, logout, refreshUserData } = useAuthContext();
+  const { getFormCompletionPercentage } = useFormsContext();
   const router = useRouter();
+  const pathname = usePathname();
 
-  const handleSearch = (query: string) => {
-    console.log("Search query:", query);
-    // TODO: Implement search functionality
-  };
+  // Check if all forms are complete
+  const completionPercentage = getFormCompletionPercentage();
+  const isComplete = completionPercentage === 100;
+
+
 
   const handleNotificationClick = (notification: any) => {
     console.log("Notification clicked:", notification);
@@ -118,7 +126,6 @@ function DashboardContent({ children }: { children: React.ReactNode }) {
         <Header
           user={safeUser}
           notifications={safeNotifications}
-          onSearch={handleSearch}
           onNotificationClick={handleNotificationClick}
           onProfileClick={handleProfileClick}
           onLogout={handleLogout}
@@ -126,10 +133,18 @@ function DashboardContent({ children }: { children: React.ReactNode }) {
 
         {/* Page Content */}
         <main className="flex-1 overflow-y-auto bg-muted/30 p-6">
-          {children}
+          {/* Show Complete component if all forms are finished and not on support team page */}
+          {isComplete && !pathname?.includes('/support-team') && !pathname?.includes('/finished') ? (
+            <Complete />
+          ) : (
+            children
+          )}
         </main>
       </SidebarInset>
-      
+
+      {/* Save Alert for Unsaved Changes */}
+      <SaveAlert />
+
       {/* Global Toast Notifications */}
       <Toaster />
     </SidebarProvider>

@@ -2,14 +2,13 @@
 
 import { useState } from "react";
 import {
-  Search,
   Bell,
   Settings,
   User,
   LogOut,
   ChevronDown,
-  ChevronsUpDown,
-  Cog,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 import { Button } from "@/shared/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/shared/ui/avatar";
@@ -20,123 +19,86 @@ import {
   DropdownMenuTrigger,
   DropdownMenuSeparator,
 } from "@/shared/ui/dropdown-menu";
-import {
-  Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-} from "@/shared/ui/command";
-import { Popover, PopoverContent, PopoverTrigger } from "@/shared/ui/popover";
 import { Badge } from "@/shared/ui/badge";
 import { SidebarTrigger } from "@/shared/ui/sidebar";
+import { ProgressBar } from "@/shared/ui/progress-bar";
 import { User as UserType, Notification } from "@/shared/types/auth";
+import { useFormsContext } from "@/shared/contexts/forms-context";
+import { useFormNavigation } from "@/shared/lib/form-navigation";
 import { cn } from "@/shared/lib/utils";
 
 interface HeaderProps {
   user: UserType;
   notifications: Notification[];
-  onSearch?: (query: string) => void;
   onNotificationClick?: (notification: Notification) => void;
   onProfileClick?: () => void;
   onLogout?: () => void;
 }
 
-const searchItems = [
-  { value: "calendar", label: "Calendar" },
-  { value: "events", label: "Events" },
-  { value: "notifications", label: "Notifications" },
-  { value: "indi-app", label: "Indi App" },
-  { value: "marketing", label: "Marketing" },
-  { value: "social-media", label: "Social Media" },
-  { value: "resources", label: "Resources" },
-  { value: "company-directory", label: "Company Directory" },
-  { value: "lenders", label: "Lenders" },
-  { value: "realtors", label: "Realtors" },
-  { value: "compliance", label: "Compliance" },
-  { value: "fintrac", label: "FINTRAC" },
-  { value: "group-benefits", label: "Group Benefits" },
-  { value: "lender-lounge", label: "Lender Lounge" },
-  { value: "newsletter-archive", label: "Newsletter Archive" },
-  { value: "partners", label: "Partners" },
-  { value: "payroll", label: "Payroll" },
-  { value: "profile", label: "Profile" },
-  { value: "my-realtors", label: "My Realtors" },
-  { value: "branding", label: "Branding" },
-];
-
 export function Header({
   user,
   notifications,
-  onSearch,
   onNotificationClick,
   onProfileClick,
   onLogout,
 }: HeaderProps) {
-  const [searchOpen, setSearchOpen] = useState(false);
-  const [searchValue, setSearchValue] = useState("");
+  const { getFormCompletionPercentage } = useFormsContext();
+  const { goToPreviousForm, goToNextForm, getCurrentFormIndex, getTotalForms } = useFormNavigation();
 
   const unreadNotifications = notifications.filter((n) => !n.read);
   const showAdminButton = user.role === "admin" || user.role === "editor";
+  const completionPercentage = getFormCompletionPercentage();
+  const currentFormIndex = getCurrentFormIndex();
+  const totalForms = getTotalForms();
 
   return (
     <header className="border-b border-border bg-background px-6 py-4 sticky top-0 z-50">
       <div className="flex items-center justify-between">
-        {/* Left side - Sidebar trigger and Logo */}
+        {/* Left side - Sidebar trigger */}
         <div className="flex items-center space-x-3">
           <SidebarTrigger className="-ml-1" />
         </div>
 
-        {/* Search Combobox */}
-        <div className="flex-1 max-w-md mx-8">
-          <Popover open={searchOpen} onOpenChange={setSearchOpen}>
-            <PopoverTrigger asChild>
-              <Button
-                variant="outline"
-                role="combobox"
-                aria-expanded={searchOpen}
-                className="w-full justify-between text-muted-foreground"
-              >
-                <div className="flex items-center">
-                  <Search className="mr-2 h-4 w-4" />
-                  <span>
-                    {searchValue
-                      ? searchItems.find((item) => item.value === searchValue)
-                          ?.label
-                      : "Search everything..."}
-                  </span>
-                </div>
-                <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
-              </Button>
-            </PopoverTrigger>
-            <PopoverContent className="w-full p-0" align="start">
-              <Command>
-                <CommandInput placeholder="Search everything..." />
-                <CommandList>
-                  <CommandEmpty>No results found.</CommandEmpty>
-                  <CommandGroup>
-                    {searchItems.map((item) => (
-                      <CommandItem
-                        key={item.value}
-                        value={item.value}
-                        onSelect={(currentValue) => {
-                          setSearchValue(
-                            currentValue === searchValue ? "" : currentValue
-                          );
-                          setSearchOpen(false);
-                          onSearch?.(item.label);
-                        }}
-                      >
-                        <Search className="mr-2 h-4 w-4" />
-                        {item.label}
-                      </CommandItem>
-                    ))}
-                  </CommandGroup>
-                </CommandList>
-              </Command>
-            </PopoverContent>
-          </Popover>
+        {/* Center - Progress bar and navigation */}
+        <div className="flex-1 max-w-2xl mx-8">
+          <div className="flex items-center space-x-4">
+            {/* Previous Form Button */}
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={goToPreviousForm}
+              disabled={currentFormIndex === 0}
+              className="flex items-center gap-2"
+            >
+              <ChevronLeft className="h-4 w-4" />
+              <span className="hidden sm:inline">Prev Form</span>
+            </Button>
+
+            {/* Progress Bar */}
+            <div className="flex-1">
+              <div className="flex items-center space-x-2">
+                <span className="text-sm font-medium text-muted-foreground">
+                  {completionPercentage}%
+                </span>
+                <ProgressBar value={completionPercentage} className="flex-1" />
+                <span className="text-sm text-muted-foreground">
+                  {currentFormIndex + 1} of {totalForms}
+                </span>
+              </div>
+            </div>
+
+            {/* Next Form Button */}
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={goToNextForm}
+              disabled={currentFormIndex === totalForms - 1}
+              className="flex items-center gap-2"
+            >
+              <span className="hidden sm:inline">Next Form</span>
+              <ChevronRight className="h-4 w-4" />
+            </Button>
+          </div>
         </div>
 
         {/* Right side actions */}

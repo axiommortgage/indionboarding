@@ -1,3 +1,5 @@
+import type { OnboardingForms, FormMenuItem } from "./forms";
+
 export interface User {
   id: string;
   documentId?: string;
@@ -155,6 +157,14 @@ export interface AuthState {
   onePages: OnePage[];
   initialized: boolean;
   error: string | null;
+  forms?: OnboardingForms;
+  menuOrder?: FormMenuItem[];
+  lastFormVisited?: string;
+  beforeLeave?: {
+    showAlert: boolean;
+    action: string | null;
+    route: string | null;
+  };
 }
 
 export interface AuthContextType {

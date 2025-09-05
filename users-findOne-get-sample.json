@@ -1,0 +1,829 @@
+// Request URL: http://localhost:1339/api/users/1012?populate=*
+
+{
+	"id": 495,
+	"username": "VincentEdwards",
+	"email": "vincent.edwards@indimortgage.ca",
+	"provider": "local",
+	"confirmed": true,
+	"blocked": false,
+	"license": "00107128",
+	"phone": "7802131039",
+	"bio": "I am a licensed mortgage broker with credentials in life insurance, accident and sickness coverage, and financial planning. I am passionate about empowering clients and dedicated to helping individuals achieve their financial goals with personalized solutions tailored to their unique needs. When not in the office, you can find me enjoying the great outdoors, whether it’s relaxing on the lake during the summer months or exploring the forest on a quad in the fall. ",
+	"address": "223 14 Street NW ",
+	"firstname": "Vincent",
+	"lastname": "Edwards",
+	"position": "Mortgage Agent Level 1",
+	"bioTitle": null,
+	"applicationLink": null,
+	"brokerage": null,
+	"mapEmbedSrc": null,
+	"facebook": "https://www.facebook.com/profile.php?id=61552122134467",
+	"instagram": "https://www.instagram.com/vincent_idealmortgages/",
+	"twitter": null,
+	"linkedin": "http://www.linkedin.com/in/vincent-edwards-4a52b371",
+	"youtube": null,
+	"whatsapp": null,
+	"hasLogo2": null,
+	"fax": null,
+	"hasCustomBanner": false,
+	"titles": null,
+	"photoOnPrintable": null,
+	"website": null,
+	"ext": null,
+	"qrCodes": null,
+	"qrCodeOnPrintable": null,
+	"isOnboarding": false,
+	"homePhone": null,
+	"cellPhone": "7802131039",
+	"emergencyContact": "Vincent Edwards",
+	"emergencyPhone": "7802131039",
+	"birthdate": "1989-10-06",
+	"startDate": null,
+	"dietRestriction": null,
+	"additionalNotes": null,
+	"middlename": "Paul",
+	"city": "Calgary",
+	"postalCode": "T2N 1Z6",
+	"tollfree": null,
+	"workEmail": "vincent@idealmtgs.ca",
+	"websiteOptIn": true,
+	"ownDomain": false,
+	"providedDomain": true,
+	"websiteDomainName": null,
+	"websiteDomainRegistrar": null,
+	"tollfreeExt": null,
+	"gender": null,
+	"appointmentScheduleLink": null,
+	"province": "Alberta",
+	"tshirtSize": "L",
+	"additionalDomainNames": null,
+	"secondaryWebsite": null,
+	"onboardingStartDate": "2025-06-26",
+	"onboardingEndDate": "2025-07-15",
+	"loginCount": "1",
+	"legalName": null,
+	"preferredName": null,
+	"googleTag": null,
+	"facebookPixelTag": null,
+	"googleWebsiteVerification": null,
+	"googleTagManagerInHead": null,
+	"googleTagManagerInBody": null,
+	"thirdPartyScriptTag": null,
+	"emptyPrintableFooter": false,
+	"googleReviewsLink": null,
+	"facebookHandler": "Mortgage With Vince",
+	"instagramHandler": "vincent_idealmortgages",
+	"linkedinHandler": "Vincent Edwards",
+	"twitterHandler": null,
+	"youtubeHandler": null,
+	"notListed": null,
+	"personalAddress": "9 Leslies Road",
+	"personalCity": "White Gull",
+	"personalProvince": "Alberta",
+	"personalPostalCode": "T9S 1R9",
+	"personalSuiteUnit": null,
+	"suiteUnit": null,
+	"licensed": true,
+	"chatWidgetCode": null,
+	"reviewWidgetCode": null,
+	"emailNotifications": true,
+	"circularPhotoUrl": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/public/images/origin/1752454091726_ojvta_Mortgage_Pic1_50164e9aff-1752454091726_ojvta-Mortgage_Pic1.png",
+	"isStaffMember": false,
+	"tiktok": null,
+	"tiktokHandler": null,
+	"pinterest": null,
+	"pinterestHandler": null,
+	"threads": null,
+	"threadsHandler": null,
+	"bluesky": null,
+	"blueskyHandler": null,
+	"websiteGitBranch": null,
+	"isComplianceStaff": false,
+	"createdAt": "2025-06-26T13:58:55.106Z",
+	"updatedAt": "2025-07-23T21:58:53.548Z",
+	"documentId": "vg8pdzlh46q3ul51wj9eajlv",
+	"publishedAt": "2025-08-11T18:59:08.637Z",
+	"photo": {
+		"id": 15176,
+		"name": "Mortgage Pic1.png",
+		"alternativeText": "",
+		"caption": "",
+		"width": null,
+		"height": null,
+		"formats": {
+			"small": {
+				"ext": ".png",
+				"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/public/images/small/1752454091726_ojvta-Mortgage_Pic1.png",
+				"hash": "1752454091726_ojvta_small",
+				"mime": "image/jpeg",
+				"name": "1752454091726_ojvta_small.png",
+				"size": 40158,
+				"width": 300
+			},
+			"medium": {
+				"ext": ".png",
+				"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/public/images/medium/1752454091726_ojvta-Mortgage_Pic1.png",
+				"hash": "1752454091726_ojvta_medium",
+				"mime": "image/jpeg",
+				"name": "1752454091726_ojvta_medium.png",
+				"size": 223618,
+				"width": 750
+			},
+			"squared": {
+				"ext": ".png",
+				"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/public/images/squared/1752454091726_ojvta-Mortgage_Pic1.png",
+				"hash": "1752454091726_ojvta_squared",
+				"mime": "image/jpeg",
+				"name": "1752454091726_ojvta_squared.png",
+				"size": 40158,
+				"width": 300,
+				"height": 300
+			}
+		},
+		"hash": "1752454091726_ojvta",
+		"ext": ".png",
+		"mime": "image/jpeg",
+		"size": 101275,
+		"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/public/images/origin/1752454091726_ojvta-Mortgage_Pic1.png",
+		"previewUrl": null,
+		"provider": "aws-s3-resizing-and-optimisation",
+		"provider_metadata": null,
+		"createdAt": "2025-07-14T00:48:15.253Z",
+		"updatedAt": "2025-07-14T20:35:06.063Z",
+		"documentId": "s81642tks4omw8of30hoefnq",
+		"publishedAt": "2025-08-11T18:59:08.171Z"
+	},
+	"logoHeader": null,
+	"logoHeader2": null,
+	"logoFooter": null,
+	"homeBanner": null,
+	"team": {
+		"id": 46,
+		"name": "I-Deal Mortgages",
+		"officePhone": "5875755440",
+		"address": "115-8820 Blackfoot Tr",
+		"province": "alberta",
+		"mapEmbedSrc": null,
+		"city": "Calgary",
+		"cobranded": true,
+		"showFSRA": null,
+		"showPoweredBy": false,
+		"postal": "T2J3J1",
+		"corporateName": "I-Deal Mortgages",
+		"applicationLink": null,
+		"facebook": null,
+		"instagram": null,
+		"linkedin": null,
+		"x": null,
+		"youtube": null,
+		"googleTag": null,
+		"facebookPixelTag": null,
+		"googleWebsiteVerification": null,
+		"GoogleTagManagerInHead": null,
+		"googleTagManagerInBody": null,
+		"thirdPartyScriptTag": null,
+		"chatWidgetCode": null,
+		"reviewWidgetCode": null,
+		"appointmentScheduleLink": null,
+		"email": null,
+		"license": null,
+		"websiteCompanyName": null,
+		"showCustomFaq": false,
+		"website": "https://i-dealmortgages.com",
+		"websiteGitBranch": null,
+		"tagline": null,
+		"createdAt": "2025-07-14T18:52:32.447Z",
+		"updatedAt": "2025-07-14T18:55:09.652Z",
+		"publishedAt": "2025-07-14T18:55:09.245Z",
+		"documentId": "h7l6g9mak4zcer2au4kh7bii"
+	},
+	"notification": [],
+	"badges": [],
+	"showBadges": null,
+	"customOnboardingForms": null,
+	"onboarding": [],
+	"printPhoto": {
+		"id": 15177,
+		"name": "Vincent Edwards.jpg",
+		"alternativeText": "",
+		"caption": "",
+		"width": null,
+		"height": null,
+		"formats": {
+			"small": {
+				"ext": ".jpg",
+				"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/public/images/small/1752454134103_fabf4-Vincent_Edwards.jpg",
+				"hash": "1752454134103_fabf4_small",
+				"mime": "image/jpeg",
+				"name": "1752454134103_fabf4_small.jpg",
+				"size": 15298,
+				"width": 300
+			},
+			"medium": {
+				"ext": ".jpg",
+				"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/public/images/medium/1752454134103_fabf4-Vincent_Edwards.jpg",
+				"hash": "1752454134103_fabf4_medium",
+				"mime": "image/jpeg",
+				"name": "1752454134103_fabf4_medium.jpg",
+				"size": 68559,
+				"width": 750
+			},
+			"squared": {
+				"ext": ".jpg",
+				"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/public/images/squared/1752454134103_fabf4-Vincent_Edwards.jpg",
+				"hash": "1752454134103_fabf4_squared",
+				"mime": "image/jpeg",
+				"name": "1752454134103_fabf4_squared.jpg",
+				"size": 9497,
+				"width": 300,
+				"height": 300
+			}
+		},
+		"hash": "1752454134103_fabf4",
+		"ext": ".jpg",
+		"mime": "image/jpeg",
+		"size": 303702,
+		"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/public/images/origin/1752454134103_fabf4-Vincent_Edwards.jpg",
+		"previewUrl": null,
+		"provider": "aws-s3-resizing-and-optimisation",
+		"provider_metadata": null,
+		"createdAt": "2025-07-14T00:48:54.398Z",
+		"updatedAt": "2025-07-14T20:35:06.063Z",
+		"documentId": "t1irk3w77i8bpupy0755ohcw",
+		"publishedAt": "2025-08-11T18:59:08.171Z"
+	},
+	"onboardingProcess": {
+		"id": 327,
+		"slug": null,
+		"completionPercent": "100",
+		"isSubmited": true,
+		"lastFormVisited": "broker-information",
+		"isLocked": true,
+		"isComplete": true,
+		"submissionDate": "2025-07-14T01:05:14.799Z",
+		"createdAt": "2025-06-26T14:02:01.665Z",
+		"updatedAt": "2025-07-23T18:52:57.748Z",
+		"publishedAt": "2025-06-26T14:02:09.437Z",
+		"documentId": "idm4isi1pxoagv4knx2j5180"
+	},
+	"signature": {
+		"id": 15175,
+		"name": "applicantSignature-Vincent-Edwards.png",
+		"alternativeText": "",
+		"caption": "",
+		"width": null,
+		"height": null,
+		"formats": {
+			"small": {
+				"ext": ".png",
+				"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/private/images/small/1752453642982_nhtmw-applicantSignature-Vincent-Edwards.png",
+				"hash": "1752453642982_nhtmw_small",
+				"mime": "image/png",
+				"name": "1752453642982_nhtmw_small.png",
+				"size": 2917,
+				"width": 300
+			},
+			"medium": {
+				"ext": ".png",
+				"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/private/images/medium/1752453642982_nhtmw-applicantSignature-Vincent-Edwards.png",
+				"hash": "1752453642982_nhtmw_medium",
+				"mime": "image/png",
+				"name": "1752453642982_nhtmw_medium.png",
+				"size": 9197,
+				"width": 750
+			},
+			"squared": {
+				"ext": ".png",
+				"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/private/images/squared/1752453642982_nhtmw-applicantSignature-Vincent-Edwards.png",
+				"hash": "1752453642982_nhtmw_squared",
+				"mime": "image/png",
+				"name": "1752453642982_nhtmw_squared.png",
+				"size": 2439,
+				"width": 300,
+				"height": 300
+			}
+		},
+		"hash": "1752453642982_nhtmw",
+		"ext": ".png",
+		"mime": "image/png",
+		"size": 31878,
+		"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/private/images/origin/1752453642982_nhtmw-applicantSignature-Vincent-Edwards.png",
+		"previewUrl": null,
+		"provider": "aws-s3-resizing-and-optimisation",
+		"provider_metadata": null,
+		"createdAt": "2025-07-14T00:40:43.262Z",
+		"updatedAt": "2025-07-14T20:35:06.063Z",
+		"documentId": "bmaxydr81s5jbvayy046m41r",
+		"publishedAt": "2025-08-11T18:59:08.171Z"
+	},
+	"initials": {
+		"id": 15179,
+		"name": "applicantSignature-Vincent-Edwards.png",
+		"alternativeText": "",
+		"caption": "",
+		"width": null,
+		"height": null,
+		"formats": {
+			"small": {
+				"ext": ".png",
+				"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/private/images/small/1752455077158_2lg94-applicantSignature-Vincent-Edwards.png",
+				"hash": "1752455077158_2lg94_small",
+				"mime": "image/png",
+				"name": "1752455077158_2lg94_small.png",
+				"size": 2773,
+				"width": 300
+			},
+			"medium": {
+				"ext": ".png",
+				"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/private/images/medium/1752455077158_2lg94-applicantSignature-Vincent-Edwards.png",
+				"hash": "1752455077158_2lg94_medium",
+				"mime": "image/png",
+				"name": "1752455077158_2lg94_medium.png",
+				"size": 10153,
+				"width": 750
+			},
+			"squared": {
+				"ext": ".png",
+				"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/private/images/squared/1752455077158_2lg94-applicantSignature-Vincent-Edwards.png",
+				"hash": "1752455077158_2lg94_squared",
+				"mime": "image/png",
+				"name": "1752455077158_2lg94_squared.png",
+				"size": 3700,
+				"width": 300,
+				"height": 300
+			}
+		},
+		"hash": "1752455077158_2lg94",
+		"ext": ".png",
+		"mime": "image/png",
+		"size": 14580,
+		"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/private/images/origin/1752455077158_2lg94-applicantSignature-Vincent-Edwards.png",
+		"previewUrl": null,
+		"provider": "aws-s3-resizing-and-optimisation",
+		"provider_metadata": null,
+		"createdAt": "2025-07-14T01:04:37.405Z",
+		"updatedAt": "2025-07-14T20:35:06.063Z",
+		"documentId": "sczo892xhh6y5a3crv7hjg7k",
+		"publishedAt": "2025-08-11T18:59:08.171Z"
+	},
+	"testimonialsList": [],
+	"branch": null,
+	"realtors": [],
+	"gifts": [],
+	"listingSheets": [],
+	"circularPhoto": {
+		"id": 15320,
+		"name": "1752454091726_ojvta-Mortgage_Pic1.png",
+		"alternativeText": null,
+		"caption": null,
+		"width": 300,
+		"height": 300,
+		"formats": {
+			"small": {
+				"ext": ".png",
+				"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/public/images/small/1752454091726_ojvta_Mortgage_Pic1_50164e9aff-1752454091726_ojvta-Mortgage_Pic1.png",
+				"hash": "1752454091726_ojvta_Mortgage_Pic1_50164e9aff_small",
+				"mime": "image/png",
+				"name": "1752454091726_ojvta_Mortgage_Pic1_50164e9aff_small.png",
+				"size": 32863,
+				"width": 300
+			},
+			"medium": {
+				"ext": ".png",
+				"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/public/images/medium/1752454091726_ojvta_Mortgage_Pic1_50164e9aff-1752454091726_ojvta-Mortgage_Pic1.png",
+				"hash": "1752454091726_ojvta_Mortgage_Pic1_50164e9aff_medium",
+				"mime": "image/png",
+				"name": "1752454091726_ojvta_Mortgage_Pic1_50164e9aff_medium.png",
+				"size": 165253,
+				"width": 750
+			},
+			"squared": {
+				"ext": ".png",
+				"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/public/images/squared/1752454091726_ojvta_Mortgage_Pic1_50164e9aff-1752454091726_ojvta-Mortgage_Pic1.png",
+				"hash": "1752454091726_ojvta_Mortgage_Pic1_50164e9aff_squared",
+				"mime": "image/png",
+				"name": "1752454091726_ojvta_Mortgage_Pic1_50164e9aff_squared.png",
+				"size": 32863,
+				"width": 300,
+				"height": 300
+			},
+			"thumbnail": {
+				"ext": ".png",
+				"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/public/images/origin/thumbnail_1752454091726_ojvta_Mortgage_Pic1_50164e9aff-thumbnail_1752454091726_ojvta-Mortgage_Pic1.png",
+				"hash": "thumbnail_1752454091726_ojvta_Mortgage_Pic1_50164e9aff",
+				"mime": "image/png",
+				"name": "thumbnail_1752454091726_ojvta-Mortgage_Pic1.png",
+				"path": null,
+				"size": 42.81,
+				"width": 156,
+				"height": 156,
+				"formats": {
+					"small": {
+						"ext": ".png",
+						"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/public/images/small/thumbnail_1752454091726_ojvta_Mortgage_Pic1_50164e9aff-thumbnail_1752454091726_ojvta-Mortgage_Pic1.png",
+						"hash": "thumbnail_1752454091726_ojvta_Mortgage_Pic1_50164e9aff_small",
+						"mime": "image/png",
+						"name": "thumbnail_1752454091726_ojvta_Mortgage_Pic1_50164e9aff_small.png",
+						"size": 35739,
+						"width": 300
+					},
+					"medium": {
+						"ext": ".png",
+						"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/public/images/medium/thumbnail_1752454091726_ojvta_Mortgage_Pic1_50164e9aff-thumbnail_1752454091726_ojvta-Mortgage_Pic1.png",
+						"hash": "thumbnail_1752454091726_ojvta_Mortgage_Pic1_50164e9aff_medium",
+						"mime": "image/png",
+						"name": "thumbnail_1752454091726_ojvta_Mortgage_Pic1_50164e9aff_medium.png",
+						"size": 147869,
+						"width": 750
+					},
+					"squared": {
+						"ext": ".png",
+						"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/public/images/squared/thumbnail_1752454091726_ojvta_Mortgage_Pic1_50164e9aff-thumbnail_1752454091726_ojvta-Mortgage_Pic1.png",
+						"hash": "thumbnail_1752454091726_ojvta_Mortgage_Pic1_50164e9aff_squared",
+						"mime": "image/png",
+						"name": "thumbnail_1752454091726_ojvta_Mortgage_Pic1_50164e9aff_squared.png",
+						"size": 35739,
+						"width": 300,
+						"height": 300
+					}
+				}
+			}
+		},
+		"hash": "1752454091726_ojvta_Mortgage_Pic1_50164e9aff",
+		"ext": ".png",
+		"mime": "image/png",
+		"size": 44.44,
+		"url": "https://indi-strapi-v2.s3.us-east-1.amazonaws.com/public/images/origin/1752454091726_ojvta_Mortgage_Pic1_50164e9aff-1752454091726_ojvta-Mortgage_Pic1.png",
+		"previewUrl": null,
+		"provider": "aws-s3-resizing-and-optimisation",
+		"provider_metadata": null,
+		"createdAt": "2025-07-23T18:53:03.200Z",
+		"updatedAt": "2025-07-23T18:53:03.932Z",
+		"documentId": "hspjwur7cbiwtiarwmplc4t8",
+		"publishedAt": "2025-08-11T18:59:08.171Z"
+	},
+	"userProgresses": [
+		{
+			"id": 1268,
+			"completedLessons": [
+				"66fe04fc41b3c753cc9e345a",
+				"66fe0c3541c1020015b7f333",
+				"66fe0e7941c1020015b7f359",
+				"66febaae41c1020015b7f3bf",
+				"66fecb3741c1020015b7f433",
+				"66fececc41c1020015b7f462",
+				"66fecf6141c1020015b7f463",
+				"66fed22d41c1020015b7f464",
+				"66fed2cd41c1020015b7f465",
+				"66fed49941c1020015b7f4a2"
+			],
+			"completedModules": [
+				"66f60106ff709100157ba9fd",
+				"66f60172ff709100157ba9ff",
+				"66f60448ff709100157baa4b",
+				"66fe057041b3c753cc9e345b"
+			],
+			"completedQuizzes": [
+				"66f60106ff709100157ba9fd",
+				"66f60172ff709100157ba9ff",
+				"66f60448ff709100157baa4b",
+				"66fe057041b3c753cc9e345b"
+			],
+			"lastAccessedLesson": 10,
+			"isComplete": null,
+			"createdAt": "2025-07-23T22:16:13.468Z",
+			"updatedAt": "2025-07-24T02:24:24.554Z",
+			"publishedAt": null,
+			"documentId": "tlwybwo0hgi0nhj8nxb2q1w4"
+		},
+		{
+			"id": 421,
+			"completedLessons": [
+				"66fe04fc41b3c753cc9e345a",
+				"66fe0c3541c1020015b7f333",
+				"66fe0e7941c1020015b7f359",
+				"66febaae41c1020015b7f3bf",
+				"66fecb3741c1020015b7f433",
+				"66fececc41c1020015b7f462",
+				"66fecf6141c1020015b7f463",
+				"66fed22d41c1020015b7f464",
+				"66fed2cd41c1020015b7f465",
+				"66fed49941c1020015b7f4a2"
+			],
+			"completedModules": [
+				"66f60106ff709100157ba9fd",
+				"66f60172ff709100157ba9ff",
+				"66f60448ff709100157baa4b",
+				"66fe057041b3c753cc9e345b"
+			],
+			"completedQuizzes": [
+				"66f60106ff709100157ba9fd",
+				"66f60172ff709100157ba9ff",
+				"66f60448ff709100157baa4b",
+				"66fe057041b3c753cc9e345b"
+			],
+			"lastAccessedLesson": 10,
+			"isComplete": null,
+			"createdAt": "2025-07-23T22:16:13.468Z",
+			"updatedAt": "2025-07-24T02:24:24.554Z",
+			"publishedAt": "2025-07-23T22:16:13.462Z",
+			"documentId": "tlwybwo0hgi0nhj8nxb2q1w4"
+		}
+	],
+	"trainingScores": [
+		{
+			"id": 407,
+			"score": "80",
+			"knowledgeCheck": [
+				{
+					"score": 100,
+					"answers": [
+						{
+							"question": "Fintrac is Optional?  ",
+							"correctOption": "False",
+							"selectedOption": "False"
+						}
+					],
+					"moduleId": "66f60106ff709100157ba9fd",
+					"moduleName": "Background"
+				},
+				{
+					"score": 80,
+					"answers": [
+						{
+							"question": "What is the fundamental principle of KYC? ",
+							"correctOption": "To maintain a clear understanding of the client's identity and gather required information  ",
+							"selectedOption": "To maintain a clear understanding of the client's identity and gather required information  "
+						},
+						{
+							"question": "What are the three main pieces of information required under KYC for each transaction?",
+							"correctOption": "Identity verification, PEP/HIO declaration, sanctions screening",
+							"selectedOption": "Identity verification, PEP/HIO declaration, sanctions screening"
+						},
+						{
+							"question": "Which of the following methods of identity verification is allowed by Indi Mortgage?",
+							"correctOption": "Government Issued Photo ID verified through a third-party tool",
+							"selectedOption": "Government Issued Photo ID verified through a third-party tool"
+						},
+						{
+							"question": "When must agents determine if a client is a Politically Exposed Person (PEP) or Head of an International Organization (HIO)?  ",
+							"correctOption": "When entering into a business relationship",
+							"selectedOption": "Every six months"
+						},
+						{
+							"question": "What is the retention period for PEP and HIO-related records?",
+							"correctOption": "5 years from the date they were created or obtained",
+							"selectedOption": "5 years from the date they were created or obtained"
+						}
+					],
+					"moduleId": "66f60172ff709100157ba9ff",
+					"moduleName": "KYC | Know Your Client"
+				},
+				{
+					"score": 90,
+					"answers": [
+						{
+							"question": "What is a Suspicious Transaction Report (STR)?",
+							"correctOption": "A report submitted to FINTRAC when there are reasonable grounds to suspect a transaction is related to money laundering or terrorist financing",
+							"selectedOption": "A report submitted to FINTRAC when there are reasonable grounds to suspect a transaction is related to money laundering or terrorist financing"
+						},
+						{
+							"question": "What must you do once you identify property linked to terrorism?",
+							"correctOption": "Immediately submit a Terrorist Property Report (TPR) to FINTRAC, RCMP, and CSIS",
+							"selectedOption": "Immediately submit a Terrorist Property Report (TPR) to FINTRAC, RCMP, and CSIS"
+						},
+						{
+							"question": "Which threshold of suspicion is required to submit a Suspicious Transaction Report?",
+							"correctOption": "Reasonable grounds to suspect",
+							"selectedOption": "Reasonable grounds to suspect"
+						},
+						{
+							"question": "What is the difference between 'Reasonable Grounds to Suspect' and 'Reasonable Grounds to Believe'?",
+							"correctOption": "Reasonable grounds to suspect is a lower threshold than reasonable grounds to believe",
+							"selectedOption": "Reasonable grounds to suspect is a lower threshold than reasonable grounds to believe"
+						},
+						{
+							"question": "What type of report must be submitted if there are no transactions but terrorist-linked property is involved?",
+							"correctOption": "Terrorist Property Report",
+							"selectedOption": "Terrorist Property Report"
+						},
+						{
+							"question": "What must you include in a Suspicious Transaction Report when explaining your suspicion?",
+							"correctOption": "A detailed explanation of the facts, context, and indicators that led to your suspicion",
+							"selectedOption": "A detailed explanation of the facts, context, and indicators that led to your suspicion"
+						},
+						{
+							"question": "What is an indicator that may prompt a Suspicious Transaction Report submission?",
+							"correctOption": "Unexplained complexity of accounts or transactions",
+							"selectedOption": "Unexplained complexity of accounts or transactions"
+						},
+						{
+							"question": "When must you submit a Suspicious Transaction Report in cases of suspected terrorist financing?",
+							"correctOption": "As soon as practicable after establishing reasonable grounds to suspect",
+							"selectedOption": "As soon as practicable after establishing reasonable grounds to suspect"
+						},
+						{
+							"question": "What action should be taken if you are unable to verify beneficial ownership?",
+							"correctOption": "Verify the identity of the entity's CEO or equivalent and apply enhanced measures",
+							"selectedOption": "Verify the identity of the entity's CEO or equivalent and apply enhanced measures"
+						},
+						{
+							"question": "Why is enhanced monitoring required for high-risk clients?",
+							"correctOption": "To flag and review suspicious activities more frequently",
+							"selectedOption": "To ensure compliance with all legal and financial regulations"
+						}
+					],
+					"moduleId": "66f60448ff709100157baa4b",
+					"moduleName": " Reporting Requirements "
+				},
+				{
+					"score": 60,
+					"answers": [
+						{
+							"question": "What type of authority does FINTRAC have regarding penalties for noncompliance with regulations?",
+							"correctOption": "The authority to issue administrative monetary penalties",
+							"selectedOption": "The authority to issue administrative monetary penalties"
+						},
+						{
+							"question": "What is the range of penalties for a minor violation?",
+							"correctOption": "$1 to $1,000 per violation",
+							"selectedOption": "$1 to $10,000 per violation"
+						},
+						{
+							"question": "For an entity, what is the maximum penalty for a very serious violation?",
+							"correctOption": "$500,000",
+							"selectedOption": "$1,000,000"
+						},
+						{
+							"question": "What happens if a business fails to comply with PCMLTFA requirements?",
+							"correctOption": "FINTRAC makes public all administrative monetary penalties imposed",
+							"selectedOption": "FINTRAC makes public all administrative monetary penalties imposed"
+						},
+						{
+							"question": "Which of the following factors is considered when categorizing the seriousness of a violation?",
+							"correctOption": "The entity's compliance history",
+							"selectedOption": "The entity's compliance history"
+						}
+					],
+					"moduleId": "66fe057041b3c753cc9e345b",
+					"moduleName": "Administrative Penalties"
+				}
+			],
+			"isFinished": true,
+			"createdAt": "2025-07-24T02:17:46.007Z",
+			"updatedAt": "2025-07-24T02:24:15.327Z",
+			"publishedAt": "2025-07-24T02:17:46.002Z",
+			"documentId": "schmhnpfveman3pe4tq9etgh"
+		},
+		{
+			"id": 1226,
+			"score": "80",
+			"knowledgeCheck": [
+				{
+					"score": 100,
+					"answers": [
+						{
+							"question": "Fintrac is Optional?  ",
+							"correctOption": "False",
+							"selectedOption": "False"
+						}
+					],
+					"moduleId": "66f60106ff709100157ba9fd",
+					"moduleName": "Background"
+				},
+				{
+					"score": 80,
+					"answers": [
+						{
+							"question": "What is the fundamental principle of KYC? ",
+							"correctOption": "To maintain a clear understanding of the client's identity and gather required information  ",
+							"selectedOption": "To maintain a clear understanding of the client's identity and gather required information  "
+						},
+						{
+							"question": "What are the three main pieces of information required under KYC for each transaction?",
+							"correctOption": "Identity verification, PEP/HIO declaration, sanctions screening",
+							"selectedOption": "Identity verification, PEP/HIO declaration, sanctions screening"
+						},
+						{
+							"question": "Which of the following methods of identity verification is allowed by Indi Mortgage?",
+							"correctOption": "Government Issued Photo ID verified through a third-party tool",
+							"selectedOption": "Government Issued Photo ID verified through a third-party tool"
+						},
+						{
+							"question": "When must agents determine if a client is a Politically Exposed Person (PEP) or Head of an International Organization (HIO)?  ",
+							"correctOption": "When entering into a business relationship",
+							"selectedOption": "Every six months"
+						},
+						{
+							"question": "What is the retention period for PEP and HIO-related records?",
+							"correctOption": "5 years from the date they were created or obtained",
+							"selectedOption": "5 years from the date they were created or obtained"
+						}
+					],
+					"moduleId": "66f60172ff709100157ba9ff",
+					"moduleName": "KYC | Know Your Client"
+				},
+				{
+					"score": 90,
+					"answers": [
+						{
+							"question": "What is a Suspicious Transaction Report (STR)?",
+							"correctOption": "A report submitted to FINTRAC when there are reasonable grounds to suspect a transaction is related to money laundering or terrorist financing",
+							"selectedOption": "A report submitted to FINTRAC when there are reasonable grounds to suspect a transaction is related to money laundering or terrorist financing"
+						},
+						{
+							"question": "What must you do once you identify property linked to terrorism?",
+							"correctOption": "Immediately submit a Terrorist Property Report (TPR) to FINTRAC, RCMP, and CSIS",
+							"selectedOption": "Immediately submit a Terrorist Property Report (TPR) to FINTRAC, RCMP, and CSIS"
+						},
+						{
+							"question": "Which threshold of suspicion is required to submit a Suspicious Transaction Report?",
+							"correctOption": "Reasonable grounds to suspect",
+							"selectedOption": "Reasonable grounds to suspect"
+						},
+						{
+							"question": "What is the difference between 'Reasonable Grounds to Suspect' and 'Reasonable Grounds to Believe'?",
+							"correctOption": "Reasonable grounds to suspect is a lower threshold than reasonable grounds to believe",
+							"selectedOption": "Reasonable grounds to suspect is a lower threshold than reasonable grounds to believe"
+						},
+						{
+							"question": "What type of report must be submitted if there are no transactions but terrorist-linked property is involved?",
+							"correctOption": "Terrorist Property Report",
+							"selectedOption": "Terrorist Property Report"
+						},
+						{
+							"question": "What must you include in a Suspicious Transaction Report when explaining your suspicion?",
+							"correctOption": "A detailed explanation of the facts, context, and indicators that led to your suspicion",
+							"selectedOption": "A detailed explanation of the facts, context, and indicators that led to your suspicion"
+						},
+						{
+							"question": "What is an indicator that may prompt a Suspicious Transaction Report submission?",
+							"correctOption": "Unexplained complexity of accounts or transactions",
+							"selectedOption": "Unexplained complexity of accounts or transactions"
+						},
+						{
+							"question": "When must you submit a Suspicious Transaction Report in cases of suspected terrorist financing?",
+							"correctOption": "As soon as practicable after establishing reasonable grounds to suspect",
+							"selectedOption": "As soon as practicable after establishing reasonable grounds to suspect"
+						},
+						{
+							"question": "What action should be taken if you are unable to verify beneficial ownership?",
+							"correctOption": "Verify the identity of the entity's CEO or equivalent and apply enhanced measures",
+							"selectedOption": "Verify the identity of the entity's CEO or equivalent and apply enhanced measures"
+						},
+						{
+							"question": "Why is enhanced monitoring required for high-risk clients?",
+							"correctOption": "To flag and review suspicious activities more frequently",
+							"selectedOption": "To ensure compliance with all legal and financial regulations"
+						}
+					],
+					"moduleId": "66f60448ff709100157baa4b",
+					"moduleName": " Reporting Requirements "
+				},
+				{
+					"score": 60,
+					"answers": [
+						{
+							"question": "What type of authority does FINTRAC have regarding penalties for noncompliance with regulations?",
+							"correctOption": "The authority to issue administrative monetary penalties",
+							"selectedOption": "The authority to issue administrative monetary penalties"
+						},
+						{
+							"question": "What is the range of penalties for a minor violation?",
+							"correctOption": "$1 to $1,000 per violation",
+							"selectedOption": "$1 to $10,000 per violation"
+						},
+						{
+							"question": "For an entity, what is the maximum penalty for a very serious violation?",
+							"correctOption": "$500,000",
+							"selectedOption": "$1,000,000"
+						},
+						{
+							"question": "What happens if a business fails to comply with PCMLTFA requirements?",
+							"correctOption": "FINTRAC makes public all administrative monetary penalties imposed",
+							"selectedOption": "FINTRAC makes public all administrative monetary penalties imposed"
+						},
+						{
+							"question": "Which of the following factors is considered when categorizing the seriousness of a violation?",
+							"correctOption": "The entity's compliance history",
+							"selectedOption": "The entity's compliance history"
+						}
+					],
+					"moduleId": "66fe057041b3c753cc9e345b",
+					"moduleName": "Administrative Penalties"
+				}
+			],
+			"isFinished": true,
+			"createdAt": "2025-07-24T02:17:46.007Z",
+			"updatedAt": "2025-07-24T02:24:15.327Z",
+			"publishedAt": null,
+			"documentId": "schmhnpfveman3pe4tq9etgh"
+		}
+	],
+	"clientGiftingRequests": [],
+	"assistants": [],
+	"leader": null,
+	"logo": null,
+	"logoNegative": null
+}
