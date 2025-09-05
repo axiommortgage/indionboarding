@@ -1,0 +1,1 @@
+export type { MpcApplicationFormData } from "../lib/validation";

@@ -1,0 +1,1 @@
+export { photosSchema, type PhotosFormData } from "./validation";

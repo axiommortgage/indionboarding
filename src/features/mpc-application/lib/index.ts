@@ -1,0 +1,1 @@
+export { mpcApplicationSchema, type MpcApplicationFormData } from './validation';

@@ -1,0 +1,1 @@
+export { MpcApplicationForm } from './mpc-application-form';

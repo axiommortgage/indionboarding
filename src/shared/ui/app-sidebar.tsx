@@ -10,6 +10,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarRail,
+  SidebarSeparator,
 } from "@/shared/ui/sidebar";
 import { Button } from "@/shared/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/shared/ui/avatar";
@@ -70,9 +71,9 @@ export function AppSidebar({
       <SidebarContent>
         {/* Forms Navigation */}
         <FormsNav />
-
+        <SidebarSeparator />
         {/* Additional Menu Items */}
-        <SidebarMenu>
+        <SidebarMenu className="p-2">
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
               <Link href="/dashboard">

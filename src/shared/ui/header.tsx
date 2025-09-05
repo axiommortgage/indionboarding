@@ -62,6 +62,15 @@ export function Header({
         {/* Center - Progress bar and navigation */}
         <div className="flex-1 max-w-2xl mx-8">
           <div className="flex items-center space-x-4">
+
+             {/* Progress Bar */}
+             <div className="flex-1">
+              <div className="flex items-center space-x-2">                
+                <ProgressBar value={completionPercentage} className="flex-1" />                
+              </div>
+            </div>
+
+            
             {/* Previous Form Button */}
             <Button
               variant="outline"
@@ -73,19 +82,7 @@ export function Header({
               <ChevronLeft className="h-4 w-4" />
               <span className="hidden sm:inline">Prev Form</span>
             </Button>
-
-            {/* Progress Bar */}
-            <div className="flex-1">
-              <div className="flex items-center space-x-2">
-                <span className="text-sm font-medium text-muted-foreground">
-                  {completionPercentage}%
-                </span>
-                <ProgressBar value={completionPercentage} className="flex-1" />
-                <span className="text-sm text-muted-foreground">
-                  {currentFormIndex + 1} of {totalForms}
-                </span>
-              </div>
-            </div>
+           
 
             {/* Next Form Button */}
             <Button

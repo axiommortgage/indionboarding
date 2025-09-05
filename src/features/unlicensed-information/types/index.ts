@@ -1,0 +1,1 @@
+export type { UnlicensedInfoFormData } from '../lib/validation';
