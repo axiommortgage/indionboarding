@@ -40,7 +40,7 @@ export function ProgressBar({
         </div>
       )}
       <div className="w-full bg-muted rounded-full h-2">
-        {/* <div
+        <div
           className={cn(
             "h-2 rounded-full transition-all duration-500 ease-out",
             isLoading 
@@ -49,7 +49,7 @@ export function ProgressBar({
             displayValue === 100 && "bg-green-500"
           )}
           style={{ width: isLoading ? "30%" : `${displayValue}%` }}
-        /> */}
+        />
       </div>
     </div>
   );
