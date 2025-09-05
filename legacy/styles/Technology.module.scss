@@ -1,0 +1,54 @@
+@import 'theme';
+@import 'mixins';
+
+.techList{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 3.2rem;
+
+  .ax_card_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+    >div{
+      margin: 1.6rem 1.6rem 1.6rem 0 ;
+      align-self: stretch;
+      >div{
+        height: 100%;
+      }
+    }
+  }
+
+  @include responsive(desktop){
+    .ax_card_list {
+      > div {
+        width: calc(25% - 1.6rem);
+        display: flex;
+        align-self: stretch;
+      }
+    }
+  }
+  
+  @include responsive(tablet){
+    .ax_card_list {
+      > div {
+        width: calc(33% - 1.6rem);
+        display: block;
+      }
+    }
+  }
+  
+  @include responsive(mobile){
+    .ax_card_list {
+      > div {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import 'theme';
+@import 'mixins';
+
+@keyframes infinitHorizontalLoop {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.ax_fullpageLayout {
+  width: 100vw;
+  background: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 2.4rem 6.4rem 2.4rem;
+  margin-top: 7rem;
+}
+
+.ax_layout {
+  width: 100vw;
+  display: grid;
+  grid-template-areas:
+    'topbar topbar'
+    'menu percentbar'
+    'menu main';
+  position: relative;
+}

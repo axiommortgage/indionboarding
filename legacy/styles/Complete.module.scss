@@ -1,0 +1,167 @@
+@import 'theme';
+@import 'mixins';
+
+.bannerContainer {
+  margin: 3.2rem 0;
+  width: 100%;
+  min-height: 20rem;
+  padding: 2.4rem 3.2rem;
+  border-radius: 0.8rem;
+  background: #fff;
+  position: relative;
+  border-radius: 0.8rem;
+  display: block;
+  overflow: hidden;
+
+  button {
+    position: relative;
+    z-index: 20;
+  }
+}
+
+.bannerAnim {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.bannerContent {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  z-index: 2;
+
+  .bannerInnerContent {
+    width: 80%;
+    h1 {
+      font-size: 3.2rem;
+      font-family: $display-font;
+      margin: 0 0 1.6rem 0;
+    }
+
+    h2 {
+      font-size: 2.1rem;
+      font-family: $display-font;
+      margin: 0 0 3.2rem 0;
+    }
+
+    position: relative;
+
+    p {
+      font-size: 1.6rem;
+      line-height: 2.1rem;
+      font-family: $display-font;
+      font-weight: 600;
+      background: #fff;
+    }
+  }
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+  list-style: none;
+  background: $bright-color;
+  border-radius: 0.8rem;
+  margin: 3.2rem 0;
+
+  li,
+  .listItem {
+    width: 100%;
+    border-bottom: 0.1rem solid $light-gray;
+    font-family: $display-font;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: $cubic-transition;
+    padding: 0.8rem 0;
+    position: relative;
+    z-index: 100;
+
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
+
+    h4 {
+      max-width: 200px;
+    }
+
+    p {
+      width: 120px;
+    }
+
+    &:hover {
+      background: $light-gray;
+    }
+
+    select {
+      margin: 0 !important;
+      height: 3.4rem !important;
+    }
+
+    h4 {
+      width: 30%;
+      span {
+        font-size: 1.2rem;
+        margin-left: 2.4rem;
+        background: $yellow;
+        color: #fff;
+        padding: 0.2rem 0.6rem;
+        border-radius: 0.3rem;
+      }
+    }
+
+    .percentage {
+      width: 40%;
+    }
+
+    .actions {
+      min-width: 20%;
+      display: flex;
+      justify-content: flex-end;
+      button,
+      a {
+        height: 3.6rem;
+        border-radius: 0.4rem;
+        font-family: $display-font;
+        font-size: 1.4rem;
+        line-height: 3.6rem;
+        font-weight: 600;
+        border: none;
+        appearance: none;
+        margin-left: 1.6rem;
+        padding: 0 1.6rem;
+        cursor: pointer;
+      }
+
+      .disabled {
+        pointer-events: none;
+        opacity: 0.3;
+        color: $gray;
+      }
+
+      .enabled {
+        background: $highlight-color;
+        color: $bright-color;
+
+        &:hover {
+          background: $highlight-dark;
+        }
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

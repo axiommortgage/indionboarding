@@ -1,0 +1,28 @@
+.teamChart {
+  width: 100%;
+  display: block;
+}
+
+.level {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 6rem 0;
+}
+
+.centered {
+  justify-content: center;
+}
+
+.left {
+  justify-content: flex-start;
+  padding-left: 15%;
+}
+
+.right {
+  justify-content: flex-end;
+  padding-right: 15%;
+}

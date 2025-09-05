@@ -1,0 +1,63 @@
+@import 'theme';
+@import 'mixins';
+
+.notFound {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  > img{
+    width: 20rem;
+    max-width: 20rem;
+    height: auto;
+  }
+
+  .illustration {
+    width: 40rem;
+    margin: 3.2rem 0;
+    text-align: center;
+
+    img{
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block
+    }
+  }
+
+  @include responsive(mobile){
+    .illustration {
+      width: 28rem;
+      margin: 3.2rem 0;
+      text-align: center;
+  
+      img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block
+      }
+    }
+  }
+
+
+  h1{
+    font-family: $display-font;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    color: $highlight-color;    
+  }
+
+  h3{
+    font-family: $display-font;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: $base-color;    
+  }
+
+  
+}

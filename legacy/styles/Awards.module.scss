@@ -1,0 +1,217 @@
+@import 'theme';
+@import 'mixins';
+
+.heading{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6.4rem;
+  padding: 3.2rem;
+  background: $bright-color; 
+  border-radius: .8rem;
+
+  h2{
+    width: 100%;
+    display: block;
+    padding-right: 3.2rem;
+    font-family: $display-font;
+    color: $highlight-dark;
+    font-size: 2.8rem;
+    margin-bottom: 1.6rem;
+    margin-top: 0;
+
+  }
+
+  p{
+    font-family: $body-font;
+    font-size: 1.6rem;
+    color: $base-color;
+  }
+}
+
+.listWithThumb{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;  
+  
+  .listItem{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background: $bright-color;
+    margin-bottom: 3.2rem;
+    border-radius: .8rem 0 .8rem .8rem;
+
+    .tag{
+      height: 4.8rem;
+      display: table;
+      position: absolute;
+      z-index: 10;
+      right: -1.6rem;
+      top: -1.6rem;
+      padding: .0 1.2rem;
+      border-radius: .4rem;
+      font-family: $display-font;        
+      font-size: 2.1rem;
+      line-height: 4.8rem;
+      color: $bright-color;
+      background: $base-color;
+    }
+
+    .thumb{
+      width: 16rem;
+      height: 16rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      background: $bright-color;  
+      border-radius: .8rem 0 0 .8rem;  
+    }
+
+    .description{
+      width: calc( 100% - 16rem);
+      display: flex;
+      flex-wrap: wrap;
+      background: $mid-gray;
+      border-radius: 0 .8rem .8rem 0;
+      padding: 1.6rem 3.2rem;
+
+      h2{
+        width: 100%;
+        display: block;
+        padding-right: 3.2rem;
+        font-family: $display-font;
+        font-size: 2.4rem;
+        margin-bottom: 0;
+      }
+
+      p{
+        font-family: $body-font;
+        font-size: 1.6rem;
+        color: $base-color;
+      }
+    }
+
+    @include responsive(tablet){
+      .tag{
+        height: 3.4rem;
+        line-height: 3.4rem;      
+        right: 1.6rem;
+        top: -1.2rem;
+        padding: .0 1.2rem;
+      }    
+    }
+  
+    @include responsive(mobile){
+      .tag{
+        height: 3.4rem;
+        line-height: 3.4rem;      
+        right: 0;
+        top: 0;
+        display: block;
+        margin: 0 auto;
+        position: relative !important;
+        transform: translateY(-1.2rem) 
+      }
+  
+      .thumb{
+        width: 100%;
+        height: auto;
+        padding: 3.2rem;  
+        border-radius: .8rem .8rem 0 0 !important;
+      }
+  
+      .description{
+        width: 100%;
+        border-radius: 0 0 .8rem .8rem;
+        text-align: center;
+        h2{
+          padding-right: 0;
+        }        
+      }
+    }
+  }  
+}
+
+.list{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;  
+
+  > h2{
+    width: 100%;
+    display: block;
+    font-family: $display-font;
+    color: $highlight-dark;
+    font-size: 3.2rem;
+    margin-bottom: 1.6rem;
+    text-align: left;
+  }
+  
+  .listItem{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background: $bright-color;
+    margin-bottom: 3.2rem;
+    border-radius: .8rem;       
+
+    .description{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 0 .8rem .8rem 0;
+      padding: 1.6rem 3.2rem;
+
+      h2{
+        width: 100%;
+        display: block;
+        font-family: $display-font;
+        font-size: 2.4rem;
+        margin-bottom: 0;
+      }
+
+      p{
+        font-family: $body-font;
+        font-size: 1.6rem;
+        color: $base-color;
+      }
+    }
+    
+  
+    @include responsive(mobile){            
+      .description{
+        width: 100%;
+        border-radius: .8rem;
+        text-align: center;  
+        >div{
+          width: 100%;
+          p{
+            width: 100%;
+          }
+        }
+        
+      }
+    }
+  }
+
+  @include responsive(mobile){
+    > h2{
+      text-align: center;
+    }
+  }
+  
+  
+}

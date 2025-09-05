@@ -1,0 +1,44 @@
+@import 'theme';
+@import 'mixins';
+
+.ax_add_broker_form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 6rem;
+  background: $bright-color;
+  padding: 3.2rem;
+  border-radius: .8rem;
+  position: relative;
+
+  .ax_field{
+    width: calc(50% - 1.6rem);
+  }
+}
+
+@include responsive(desktop){
+  .ax_add_broker_form{  
+    width: 100rem;
+  }
+}
+
+@include responsive(tablet){
+  .ax_add_broker_form{  
+    width: 70rem;
+
+    .ax_field{
+      width: 100%;
+    }
+  }
+}
+
+@include responsive(mobile){
+  .ax_add_broker_form{  
+    width: 100%;
+
+    .ax_field{
+      width: 100%;
+    }
+  }
+}

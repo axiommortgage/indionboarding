@@ -1,0 +1,62 @@
+@import 'theme';
+
+.ax_field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $display-font;
+    margin-top: 0;
+    color: $highlight-dark;
+  }
+
+  label {
+    color: $highlight-dark;
+    font-family: $display-font;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.4rem;
+
+    span {
+      color: red;
+      font-weight: 800;
+      font-size: 1.6rem;
+    }
+
+    p {
+      margin-top: 0;
+    }
+  }
+
+  select {
+    width: 100%;
+    border-radius: 0.4rem;
+    border: 0.1rem solid $mid-gray;
+    background: $light-gray;
+    padding: 0 4rem 0 1.6rem;
+    color: $base-color;
+    font-family: $display-font;
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-bottom: 1.6rem;
+    height: 4rem;
+
+    &::placeholder {
+      font-weight: 400;
+      color: $mid-gray;
+    }
+  }
+
+  small {
+    font-family: $display-font;
+    font-size: 1.4rem;
+  }
+}

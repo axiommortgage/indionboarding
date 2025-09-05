@@ -1,0 +1,62 @@
+@import 'theme';
+@import 'mixins';
+
+.avatarMenu {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  ul {
+    list-style: none;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.8rem;
+    width: 18rem;
+    background: #fff;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    z-index: 10;
+    display: none;
+    box-shadow: $shadow;
+
+    li {
+      display: block;
+      line-height: 2.4rem;
+
+      a {
+        font-family: $display-font;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+          color: $highlight-color;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    ul {
+      display: flex !important;
+      flex-direction: column;
+    }
+  }
+}
+
+.ax_avatar {
+  width: 6rem;
+  height: 6rem;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: $mid-gray;
+}

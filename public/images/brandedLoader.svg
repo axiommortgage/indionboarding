@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="0"
+	 width="200px" height="400px" viewBox="0 0 300 400" style="enable-background:new 0 0 300 400;" xml:space="preserve"
+	>
+<style type="text/css">
+	@keyframes kicking {
+		0%{
+			transform: translateY(-50px);
+			opacity: 0;
+		}
+
+		10% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+
+		20% {
+			transform: translateY(-30px);
+			opacity: 1;
+		}
+
+		30% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+
+		37% {
+			transform: translateY(-15px);
+			opacity: 1;
+		}
+
+		40% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+
+		45% {
+			transform: translateY(-5px);
+			opacity: 1;
+		}
+
+		50% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+
+		100%{
+			transform: translateY(0);
+			opacity: 1;
+		}
+		
+	}
+
+	@keyframes lineGrow {
+		to{
+			stroke-dashoffset: 0;
+		}
+	}
+
+	.element0 {
+		animation: kicking 2s infinite ease-in;
+		fill: #29c6be;
+	}
+
+	.element1, .element2, .element3{
+		fill: 000000;
+		stroke-width:12;
+		stroke-miterlimit:10;
+		stroke-dasharray: 800;
+		stroke-dashoffset: 800;
+		<!-- animation: lineGrow 2s infinite ease-out; -->
+	}
+	.element1, .element2{
+		stroke:;
+	}
+	.element3{
+		stroke:#000000;
+	}
+	</style>
+<path class="element1" d="M5,102.9v154.3c0,8.8,7.2,16,16,16h60.8c1.1,0,2-0.9,2-2V102.9c0-1.4-1.4-2.4-2.7-1.8
+	c-9.2,3.7-20.4,6.7-35.7,6.7c-16.4,0-28-2.7-37.6-6.7C6.4,100.5,5,101.5,5,102.9z"/>
+<circle class="element0" cx="44.4" cy="44.4" r="39.4"/>
+<path class="element2" d="M204.4,101.2c-4.3,0-8.2-0.1-11.9-0.2c-1.1-0.1-2.1,0.9-2.1,2l0.1,155.3c0,8.8,7.2,16,16,16h60.7
+	c1.1,0,2-0.9,2-2V164.6C269.2,129.5,240.2,101.2,204.4,101.2L204.4,101.2z"/>
+<path class="element3" d="M174.4,100.8c0-1.1-0.9-2-2-2c-15.4,0-26.2-8.5-43.6-8.5c-13,0-24.7,5.2-28,7c-0.6,0.3-1,1-1,1.8v159.1
+	c0,8.8,7.2,16,16,16h56.6c1.1,0,2-0.9,2-2V137V100.8L174.4,100.8z"/>
+</svg>

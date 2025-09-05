@@ -1,0 +1,129 @@
+@import 'theme';
+@import 'mixins';
+.ax_form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;  
+
+  .ax_form_heading{
+    width: 100%;
+    margin-bottom: 1.6rem;
+
+    p{
+      font-size: 1.6rem;
+      font-family: $body-font;
+    }
+  }
+  .ax_field{
+    display: flex;
+    flex-direction: column;    
+
+    label{
+      font-family: $display-font;
+      font-weight: 700;
+      display: block;
+      width: 100%;
+      margin-bottom: .4rem;
+
+      span{
+        color: red;
+        font-weight: 800;
+        font-size: 1.6rem;
+      }
+    }
+
+    textarea, input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"] {
+      width: 100%;
+      border-radius: .4rem;
+      border: .1rem solid $mid-gray;
+      background: $superlight-gray;
+      padding: 0 1.6rem;
+      color: $base-color;
+      font-family: $body-font;
+      font-size: 1.4rem;
+      display: inline-block;
+      margin-bottom: 1.6rem;
+      font-weight: 400;
+
+      &::placeholder{
+        font-weight: 400;
+        color: $mid-gray;
+      }
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"] {
+      height: 4rem;
+    }
+
+    small{
+      font-family: $display-font;
+      font-size: 1.4rem;
+    }
+
+    input[type="checkbox"]{
+      margin-bottom: 1.6rem;      
+    }    
+  }
+
+  .phoneExt{
+    display: flex;
+    justify-content: space-between;
+
+    div{
+      &:nth-child(1){
+        width: 70%;
+      }
+
+      &:nth-child(2){
+        width: calc(30% - 1.6rem);
+      }
+    }                 
+  }
+}
+
+.ax_btn_submit{
+      height: 4rem;
+      border-radius: .4rem;
+      background: $highlight-color;
+      color: $bright-color;
+      font-family: $display-font;
+      font-size: 1.6rem;
+      font-weight: 600;
+      border: none;
+      padding: 0 2.4rem;
+      float: right;
+
+      > img, svg{
+        display: inline-block;
+        width: 3.6rem !important;
+        height: 3.6rem !important;
+        vertical-align: middle;
+      }
+    }
+
+
+@include responsive(desktop){
+  .ax_form{  
+    .ax_field{
+      width: calc(50% - 1.6rem);      
+    }
+  }
+}
+
+@include responsive(tablet){
+  .ax_form{  
+
+    .ax_field{
+      width: 100%;
+    }
+  }
+}
+
+@include responsive(mobile){
+  .ax_form{  
+ 
+    .ax_field{
+      width: 100%;
+    }
+  }
+}

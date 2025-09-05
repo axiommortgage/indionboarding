@@ -1,0 +1,294 @@
+@import 'theme';
+
+.onboardingForm {
+  .content {
+    h2 {
+      font-size: 2.1rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    h2,
+    h3,
+    h4 {
+      margin: 0.8rem 0 0.4rem 0;
+      color: $highlight-dark;
+    }
+
+    p {
+      margin: 0 0 1.6rem 0;
+      font-size: 1.6rem;
+      line-height: 2.1rem;
+
+      input[type='text'],
+      input[type='date'] {
+        height: 2.4rem;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 0.1rem solid #000;
+        width: 50rem;
+        font-weight: 700;
+        background: $light-gray;
+        font-size: 1.6rem;
+      }
+
+      a {
+        color: $highlight-dark;
+        text-decoration: underline;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      li {
+        width: 100%;
+        line-height: 2.4rem;
+        font-family: $body-font;
+        font-size: 1.6rem;
+        padding-left: 1.6rem;
+        position: relative;
+        display: block;
+        margin-bottom: 1.6rem;
+
+        &:before {
+          content: '';
+          width: 0.8rem;
+          height: 0.8rem;
+          border-radius: 50%;
+          display: block;
+          position: absolute;
+          top: 0.6rem;
+          left: 0;
+          background: $highlight-color;
+        }
+      }
+    }
+
+    .footerInlineFields {
+      width: 100%;
+      display: block;
+
+      p {
+        margin-bottom: 3.2rem;
+        position: relative;
+
+        span {
+          span {
+            color: red;
+          }
+        }
+      }
+
+      .undertext {
+        position: absolute;
+        bottom: -1.8rem;
+        left: 18rem;
+        font-size: 1.2rem;
+        font-family: $body-font;
+      }
+    }
+  }
+
+  .checkboxRow {
+    margin: 0 0 1.6rem 0;
+    font-family: $display-font;
+    font-weight: 700;
+    line-height: 1.6rem;
+    display: flex;
+    align-items: center;
+
+    span {
+      display: flex;
+      align-items: center;
+      height: 2.4rem;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      input {
+        margin: 0 0.4rem 0 0 !important;
+      }
+    }
+
+    input[type='checkbox'] {
+      appearance: none;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      text-align: center;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 0.2rem;
+      border: 0.2rem solid $mid-gray;
+      background: $light-gray;
+      display: block;
+      position: relative;
+
+      &:checked {
+        &:before {
+          content: '\2713';
+          font-size: 1.6rem;
+          line-height: 1.6rem;
+          text-align: center;
+          width: 1.2rem;
+          height: 1.2rem;
+          border-radius: 0.2rem;
+          background: transparent;
+          border: none;
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 50;
+        }
+      }
+    }
+  }
+}
+
+.bodyText {
+  width: 100%;
+  display: block;
+
+  ol {
+    font-family: $body-font;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    li {
+      &::marker {
+        font-family: $body-font;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.signatures {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: $body-font;
+  }
+}
+
+.contractHeading {
+  margin-bottom: 3.2rem;
+
+  h1 {
+    margin-bottom: 3.2rem;
+  }
+
+  h1,
+  h2 {
+    font-family: $body-font !important;
+    font-size: 1.6rem;
+
+    span {
+      font-weight: 400;
+    }
+  }
+}
+
+.inputRow {
+  width: 100%;
+  min-height: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 1.6rem;
+
+  input {
+    margin: 0 1.2rem 0 0;
+  }
+
+  span {
+    display: inline-block;
+    padding-right: 0.8rem;
+    input {
+      margin-right: 0.4rem;
+      transform: translateY(0.2rem);
+    }
+    label {
+      font-family: $display-font;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #000;
+      line-height: 2.4rem;
+    }
+  }
+
+  > p {
+    line-height: 2.4rem;
+    max-width: calc(100% - 7.2rem);
+  }
+}
+
+.switcherRow {
+  width: 100%;
+  min-height: 4rem;
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 1.6rem;
+
+  input {
+    margin: 0 1.2rem 0 0;
+  }
+
+  span {
+    display: inline-block;
+    padding-right: 0.8rem;
+    input {
+      margin-right: 0.4rem;
+      transform: translateY(0.2rem);
+    }
+    label {
+      font-family: $display-font;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #000;
+      line-height: 2.4rem;
+    }
+  }
+
+  > p {
+    line-height: 2.4rem;
+    max-width: calc(100% - 7.2rem);
+  }
+}
+
+.signPreview {
+  background: $light-gray;
+  position: relative;
+  border: 0.2rem dashed $mid-gray;
+
+  &:before {
+    content: 'signature preview';
+    position: absolute;
+    top: 0.4rem;
+    left: 0.4rem;
+    background: $yellow;
+    color: #000;
+    font-family: $display-font;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.2rem;
+    z-index: 10;
+  }
+}

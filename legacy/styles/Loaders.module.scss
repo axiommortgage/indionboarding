@@ -1,0 +1,108 @@
+@import 'theme';
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ax_processing {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1900;
+
+  span {
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    border-radius: 50%;
+    transform-origin: center;
+    animation: spin 0.46s linear infinite;
+    background: linear-gradient(
+      65deg,
+      $highlight-color 0%,
+      $highlight-color 1%,
+      $highlight-color 60%,
+      rgba(255, 255, 255, 1) 80%
+    );
+    z-index: 1;
+    overflow: hidden;
+    border: 0.8rem solid white;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -1rem;
+      right: 0.28rem;
+      width: 3rem;
+      height: 3rem;
+      background: $highlight-color;
+      z-index: 50;
+      border-radius: 0.2rem;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 6rem;
+      height: 6rem;
+      background: white;
+      clip-path: circle(2.8rem at 3.2rem 2.8rem);
+      z-index: 100;
+    }
+  }
+
+  p {
+    font-family: $display-font;
+    font-size: 1.6rem;
+    color: $base-color;
+    font-weight: 700;
+  }
+}
+
+.ax_processing_branded {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1900;
+
+  span {
+    width: 16rem;
+    height: 16rem;
+    display: block;
+    background-image: url('../public/images/indi-animated-logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  p {
+    font-family: $display-font;
+    font-size: 1.6rem;
+    color: $base-color;
+    font-weight: 700;
+  }
+}
+
+.ax_processing_hidden {
+  display: none;
+}

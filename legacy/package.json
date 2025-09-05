@@ -1,0 +1,70 @@
+{
+  "name": "axiomonboarding",
+  "version": "0.1.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3030",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "dependencies": {
+    "@iconscout/react-unicons": "^1.1.6",
+    "axios": "^1.11.0",
+    "eslint-config-next": "13.5.7-canary.37",
+    "events": "^3.3.0",
+    "file-saver": "^2.0.5",
+    "form-data": "^4.0.0",
+    "html-to-image": "^1.11.11",
+    "js-cookie": "^2.2.1",
+    "jszip": "^3.10.1",
+    "jszip-utils": "^0.1.0",
+    "lottie-react": "^2.4.1",
+    "markdown-it": "^14.1.0",
+    "moment": "^2.30.1",
+    "next": "13.5.7-canary.37",
+    "next-images": "^1.8.4",
+    "nextjs-breadcrumbs": "^1.1.9",
+    "nookies": "^2.5.2",
+    "nprogress": "^0.2.0",
+    "pdf-lib": "^1.17.1",
+    "react": "^18.2.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^18.2.0",
+    "react-drag-drop-files": "^2.3.9",
+    "react-easy-crop": "^5.1.0",
+    "react-grid-system": "^8.0.1",
+    "react-moment": "^1.1.2",
+    "react-signature-canvas": "^1.0.7",
+    "react-tag-input": "^6.8.1",
+    "react-text-mask": "^5.5.0",
+    "react-xarrows": "^2.0.2",
+    "reactflow": "^11.7.0",
+    "sass": "^1.49.7",
+    "text-mask-addons": "^3.8.0",
+    "vcard-creator": "^0.6.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-watch": "^7.0.0",
+    "prettier": "^2.2.1",
+    "prettier-eslint": "^12.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "engines": {
+    "node": "22"
+  }
+}

@@ -1,0 +1,147 @@
+@import './theme';
+
+.ax_btn {
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  font-family: $display-font;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  border: none;
+  appearance: none;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+
+  > img,
+  svg {
+    display: inline-block;
+    width: 2.4rem !important;
+    height: 2.4rem !important;
+    margin-left: 0.8rem;
+    vertical-align: middle;
+  }
+}
+
+.icon_left {
+  > img,
+  svg {
+    display: block;
+    width: 2rem !important;
+    height: 2rem !important;
+    margin-right: 0.8rem;
+    margin-left: 0;
+  }
+}
+
+.icon_right {
+  > img,
+  svg {
+    display: block;
+    width: 2rem !important;
+    height: 2rem !important;
+    margin-left: 0.8rem;
+    margin-right: 0;
+  }
+}
+
+.ax_btn_xsmall {
+  height: 2.8rem;
+  line-height: 2.8rem;
+  font-size: 1.1rem;
+  padding: 0 1.6rem;
+}
+
+.ax_btn_small {
+  height: 3.4rem;
+  line-height: 3.4rem;
+  font-size: 1.2rem;
+  padding: 0 1.8rem;
+}
+
+.ax_btn_medium {
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.6rem;
+  padding: 0 3.2rem;
+}
+
+.ax_btn_large {
+  height: 4.8rem;
+  line-height: 4.8rem;
+  font-size: 1.8rem;
+  padding: 0 3.6rem;
+}
+
+.ax_btn_xlarge {
+  height: 5.4rem;
+  line-height: 5.4rem;
+  font-size: 2.1rem;
+  padding: 0 4rem;
+}
+
+.ax_btn_highlight {
+  background: $highlight-color;
+  color: $bright-color;
+  &:hover {
+    background: darken($highlight-color, 10);
+  }
+}
+
+.ax_btn_bright {
+  background: white;
+  color: $base-color;
+  &:hover {
+    background: darken($highlight-color, 10);
+    color: white;
+  }
+}
+
+.ax_btn_dark {
+  background: $base-color;
+  color: white;
+  &:hover {
+    background: darken($highlight-color, 10);
+    color: white;
+  }
+}
+
+.ax_btn_gray {
+  background: $mid-gray;
+  color: #000;
+  &:hover {
+    background: $highlight-color;
+    color: white;
+  }
+}
+
+.ax_btn_wide {
+  display: block;
+  width: 100%;
+}
+
+.ax_btn_centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.left {
+  float: left;
+  margin-right: 0.8rem;
+}
+
+.right {
+  float: right;
+  margin-left: 0.8rem;
+}

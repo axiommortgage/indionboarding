@@ -1,0 +1,92 @@
+@import 'theme';
+
+.filterContainer{
+  width: 100%;
+  border-radius: .8rem;
+  background: $bright-color;
+  box-shadow: $shadow;
+  margin-bottom: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter {
+  width: auto;
+  padding: 1.6rem; 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  select{
+    width: auto;
+    height: 4rem;
+    border-radius: 0.4rem 0 0 0.4rem;
+    border: 0.1rem solid $mid-gray;
+    background: $light-gray;
+    padding: 0 4rem 0 1.6rem;
+    color: $base-color;
+    font-family: $display-font;
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-left: .8rem;
+  }
+
+  label{
+    font-family: $display-font;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-left: 3.2rem;
+
+    &:first-child{
+      margin-left: 0;
+    }
+    
+
+    input[type="text"]{
+      width: auto;
+      height: 4rem;
+      border-radius: 0.4rem;
+      border: 0.1rem solid $mid-gray;
+      background: $light-gray;
+      padding: 0 4rem 0 1.6rem;
+      color: $base-color;
+      font-family: $display-font;
+      font-size: 1.4rem;
+      display: inline-block;
+      margin-left: .8rem;
+    }
+  } 
+  
+  .error{
+    width: 100%;
+    min-height: 4.8rem;
+    color: $red;
+    font-family: $display-font;
+    font-size: 1.6rem;
+  }
+
+  button {
+      padding: 0 2.4rem;
+      height: 4rem;
+      border-radius: 0 0.4rem 0.4rem 0;
+      background: $highlight-color;
+      color: $bright-color;
+      font-family: $display-font;
+      font-size: 1.6rem;
+      font-weight: 600;
+      border: none;
+  }
+}
+
+.searchFilter{
+  label{
+    margin-left: 1.6rem;
+  }
+  button {
+    margin-left: 1.6rem;
+    border-radius: .4rem !important;
+  }
+}
+

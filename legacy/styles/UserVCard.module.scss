@@ -1,0 +1,405 @@
+@import 'theme';
+@import 'mixins';
+
+.cardUser {
+  width: calc(25% - 3.2rem);
+  height: 12rem;
+  margin: 0 1.6rem 3.2rem 0;
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    &:before {
+      background: black;
+    }
+  }
+
+  .cardContainer {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    background: $bright-color;
+    border-radius: 6rem;
+    transition: all 0.2s ease-out;
+    position: relative;
+
+    .overlay {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      background: $highlight-color;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.2s ease-out;
+      border-radius: 6rem;
+      appearance: none;
+      border: none;
+
+      p {
+        color: #fff;
+        font-size: 1.4rem;
+        font-family: $display-font;
+        font-weight: 600;
+      }
+    }
+
+    &:hover {
+      .overlay {
+        display: flex;
+        cursor: pointer;
+      }
+    }
+
+    .photo {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 1.6rem 0 0;
+      display: block;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-color: $mid-gray;
+    }
+
+    .cardBody {
+      width: calc(100% - 11.6rem);
+      max-width: calc(100% - 11.6rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+      height: 100%;
+
+      h3 {
+        font-family: $display-font;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: $base-color;
+        margin: 0 0 1.2rem 0;
+        padding-right: 1.6rem;
+      }
+
+      p {
+        font-family: $display-font;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        font-weight: 400;
+        color: $base-color;
+        margin: 0;
+        word-break: break-all;
+
+        strong {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@include responsive(desktop) {
+  .level1 {
+    width: 30rem;
+  }
+  .level2 {
+    width: 24rem;
+    height: 9.6rem;
+    margin: 1.6rem 1.6rem 3.2rem 0;
+  }
+  .level3,
+  .level4 {
+    width: 18.5rem;
+    height: 7.6rem;
+    margin: 1.6rem 1.6rem 3.2rem 0;
+  }
+  .level5 {
+    width: calc(33% - 3.2rem);
+  }
+}
+
+@include responsive(tablet) {
+  .cardUser {
+    width: calc(50% - 3.2rem);
+  }
+}
+
+@include responsive(mobile) {
+  .cardUser {
+    width: calc(100% - 3.2rem);
+  }
+}
+
+.level1,
+.level2,
+.level3,
+.level4,
+.level5 {
+  position: relative;
+
+  .cardContainer {
+    background: #212121;
+    position: relative;
+    z-index: 2;
+
+    h3,
+    h4 {
+      margin: 0 0 0.4rem 0;
+      font-family: $display-font;
+    }
+    h3 {
+      color: #fff !important;
+    }
+    h4 {
+      color: $highlight-color;
+      font-size: 1.1rem;
+      padding-right: 1.6rem;
+    }
+
+    .photo {
+      border: 0.6rem solid #323232;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      width: 4rem;
+      height: 1rem;
+      background: #fff;
+      position: absolute;
+      z-index: 1;
+    }
+
+    &:before {
+      top: -1rem;
+      left: 7rem;
+    }
+
+    &:after {
+      bottom: -1rem;
+      left: 7rem;
+    }
+  }
+
+  &:before {
+    content: '';
+    width: 14rem;
+    height: 14rem;
+    background: $gradient-real-teal;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    z-index: 1;
+    border-radius: 7rem;
+  }
+}
+
+.level2,
+.level3,
+.level4,
+.level5 {
+  .cardContainer {
+    background: $light-gray;
+
+    h3 {
+      color: #000 !important;
+    }
+    h4 {
+      color: $highlight-dark;
+    }
+    .photo {
+      border: 0.6rem solid $mid-gray;
+    }
+  }
+}
+
+.level2 {
+  &:before {
+    content: '';
+    background: $gradient-teal;
+  }
+}
+
+.level2 {
+  .cardContainer {
+    width: 100%;
+    height: 100%;
+    padding: 0.8rem;
+
+    .photo {
+      width: 8rem;
+      height: 8rem;
+      margin: 0 1.6rem 0 0;
+    }
+
+    .cardBody {
+      width: calc(100% - 11.6rem);
+      max-width: calc(100% - 11.6rem);
+      margin-top: 0;
+
+      h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.4rem;
+        margin-top: 0;
+      }
+    }
+
+    &:before {
+      width: 6rem;
+      top: -1rem;
+      left: 5rem !important;
+    }
+
+    &:after {
+      width: 6rem;
+      bottom: -1rem;
+      left: 5rem !important;
+    }
+  }
+
+  &:before {
+    height: 11rem;
+    top: -0.7rem;
+    left: -0.7rem !important;
+  }
+}
+
+.level3 {
+  .cardContainer {
+    .cardBody {
+      width: calc(100% - 11.6rem);
+      max-width: calc(100% - 11.6rem);
+    }
+  }
+}
+
+.level3,
+.level4 {
+  .cardContainer {
+    width: 100%;
+    height: 100%;
+    padding: 0.8rem;
+
+    .photo {
+      width: 6rem;
+      height: 6rem;
+      margin: 0 0.8rem 0 0;
+    }
+
+    .cardBody {
+      width: calc(100% - 8rem);
+      max-width: calc(100% - 8rem);
+      margin-top: 0;
+
+      h3 {
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+        margin-top: 0;
+      }
+
+      h4 {
+        font-size: 0.9rem;
+      }
+    }
+
+    &:before {
+      width: 3rem;
+      top: -1rem;
+      left: 4rem !important;
+    }
+
+    &:after {
+      width: 3rem;
+      bottom: -1rem;
+      left: 4rem !important;
+    }
+  }
+
+  &:before {
+    width: 9rem;
+    height: 9rem;
+    top: -0.7rem;
+    left: -0.7rem !important;
+  }
+}
+
+.level5 {
+  width: calc(15% - 3.2rem);
+  height: 8rem;
+  margin: 0 1.2rem 2.4rem 0;
+
+  .cardContainer {
+    width: 100%;
+    height: 100%;
+    padding: 0.8rem;
+
+    .photo {
+      width: 6rem;
+      height: 6rem;
+      margin: 0 1.2rem 0 0;
+    }
+
+    .cardBody {
+      width: calc(100% - 8.6rem);
+      max-width: calc(100% - 8.6rem);
+      margin-top: 0;
+
+      h3 {
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
+        margin-top: 0;
+      }
+
+      h4 {
+        font-size: 0.8rem;
+      }
+    }
+    &:before {
+      width: 3rem;
+      top: -1rem;
+      left: 4rem !important;
+    }
+
+    &:after {
+      width: 3rem;
+      bottom: -1rem;
+      left: 4rem !important;
+    }
+  }
+
+  &:before {
+    width: 9rem;
+    height: 9rem;
+    top: -0.5rem;
+    left: -0.5rem !important;
+  }
+}
+
+.level3 {
+  &:before {
+    content: '';
+    background: $gradient-blue;
+  }
+}
+
+.level4 {
+  &:before {
+    content: '';
+    background: $gradient-purple;
+  }
+}
+
+.level5 {
+  &:before {
+    content: '';
+    background: $gradient-yellow;
+  }
+}

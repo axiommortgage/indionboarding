@@ -1,0 +1,194 @@
+@import 'theme';
+@import 'mixins';
+
+.ax_signature {
+  p {
+    font-family: $body-font;
+    font-size: 1.4rem;
+    color: $base-color;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer img {
+  margin-left: 0.5rem;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .left_column {
+    background: $light-gray;
+    border-radius: 0.8rem;
+    width: calc(100% - 6.4rem);
+    background: $bright-color;
+    padding: 3.2rem;
+    margin-right: 1.6rem;
+
+    .ax_field {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      border-bottom: 0.2rem solid $mid-gray;
+      padding-bottom: 3.2rem;
+      margin-bottom: 3.2rem;
+
+      label {
+        color: $highlight-dark;
+        font-family: $display-font;
+        font-size: 1.4rem;
+        font-weight: 700;
+        display: block;
+        width: 100%;
+        margin-bottom: 0.4rem;
+
+        span {
+          color: red;
+          font-weight: 800;
+          font-size: 1.6rem;
+        }
+      }
+
+      textarea,
+      input[type='text'],
+      input[type='email'],
+      input[type='password'],
+      input[type='number'],
+      input[type='tel'] {
+        width: 100%;
+        border-radius: 0.4rem;
+        border: 0.1rem solid $mid-gray;
+        background: $light-gray;
+        padding: 0 4rem 0 1.6rem;
+        color: $base-color;
+        font-family: $display-font;
+        font-size: 1.4rem;
+        display: inline-block;
+        margin-bottom: 1.6rem;
+      }
+
+      input[type='text'],
+      input[type='email'],
+      input[type='password'],
+      input[type='number'],
+      input[type='tel'],
+      input[type='date'],
+      input[type='time'],
+      input[type='number'],
+      input[type='url'] {
+        height: 4rem;
+
+        &::placeholder {
+          font-weight: 400;
+          color: $mid-gray;
+        }
+      }
+    }
+
+    input {
+      height: 4.8rem;
+      border-radius: 0.4rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+      border: 0.1rem solid $base-mid-color;
+      background: $mid-gray;
+      padding: 0 1.6rem;
+    }
+
+    .ax_search {
+      display: flex;
+      justify-content: space-between;
+      input {
+        width: calc(100% - 20rem) !important;
+      }
+      button {
+        width: 18rem;
+        height: 4rem;
+        background: $highlight-color;
+        color: #fff;
+        font-family: $display-font;
+        font-size: 1.4rem;
+        font-weight: 700;
+        border: none;
+        border-radius: 0.4rem;
+
+        > img,
+        svg {
+          display: inline-block;
+          width: 3.6rem !important;
+          height: 3.6rem !important;
+          vertical-align: middle;
+        }
+
+        &:hover {
+          background: $base-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .right_column {
+    width: 60rem;
+
+    .actions {
+      font-family: $display-font;
+      font-weight: 800;
+      display: flex;
+      > div {
+        margin-right: 0.8rem;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+
+@include responsive(tablet){
+  .columns{
+    flex-wrap: wrap;
+
+    .left_column {    
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 1.6rem;
+    }
+    .right_column {    
+      width: 100%;
+    }
+  }
+}
+
+@include responsive(mobile){
+  .columns{
+    flex-wrap: wrap;
+
+    .left_column {    
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 1.6rem;
+    }
+    .right_column {    
+      width: 100%;
+      overflow-x: scroll;
+    }
+  }
+}

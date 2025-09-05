@@ -1,0 +1,36 @@
+@import 'theme';
+@import 'mixins';
+
+.ax_main {
+  grid-area: main;
+  width: calc(100vw - 20rem);
+  min-height: 100vh;
+  padding: 7rem 1.6rem 12rem 1.6rem;
+  background: $light-gray;
+  position: relative;
+  overflow: hidden;
+
+  form {
+    padding: 1.6rem;
+    background: #fff;
+    border-radius: 0.8rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+@include responsive(tablet) {
+  .ax_main {
+    width: 100%;
+  }
+}
+
+@include responsive(mobile) {
+  .ax_main {
+    width: 100%;
+  }
+}
+
+.fullpage {
+  width: 100%;
+  padding: 7rem 0 12rem 0;
+}

@@ -1,0 +1,244 @@
+@import 'theme';
+@import 'mixins';
+
+.newsList{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .ax_card_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+    >div{
+      margin-right: 1.6rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  @include responsive(desktop){
+    .ax_card_list {
+      > div {
+        width: calc(25% - 1.6rem);
+        display: flex;
+        align-self: stretch;
+      }
+    }
+  }
+  
+  @include responsive(tablet){
+    .ax_card_list {
+      > div {
+        width: calc(33% - 1.6rem);
+        display: block;
+      }
+    }
+  }
+  
+  @include responsive(mobile){
+    .ax_card_list {
+      > div {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+.contentContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.listColumn {
+  width: 28rem;
+  height: 100%;
+  background: $bright-color;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem 3.2rem 0 1.6rem;
+  border-radius: 0.8rem;
+
+  > li {
+    width: 100%;
+    font-family: $display-font;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1.2rem 0;
+    border-bottom: 0.1rem solid $mid-gray;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    > button {
+      background: transparent;
+      border: none;
+      width: auto;
+      padding: 0;
+      font-family: $display-font;
+      font-size: 1.4rem;
+      font-weight: 700;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);       
+
+      &:hover {
+        color: $highlight-color;
+      }
+
+      span {
+        font-weight: 400;
+        color: $highlight-dark;
+        margin-left: 0.8rem;
+        pointer-events: none;
+      }
+    }
+
+    svg {
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-right: 0.8rem;
+      pointer-events: none;
+    }
+    time{
+      pointer-events: none;
+    }
+
+    > ul {
+      width: 100%;
+      list-style: none;
+      padding: 0 0 0 1.6rem;
+      display: none;
+
+      button {
+        background: transparent;
+        border: none;
+        font-family: $body-font;
+        font-size: 1.4rem;
+        color: $highlight-dark;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+        text-align: left;
+
+        &:hover {
+          color: $highlight-color;
+        }
+
+        span{
+          color: $base-color;
+        }
+      }
+    }
+  }
+
+  .opened {
+    display: block;
+  }
+}
+
+.contentColumn {
+  width: calc((100% - 31.6rem));
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listColumnMob{
+  background: $bright-color;
+  border-radius: .4rem;
+  font-family: $display-font;
+  font-weight: 600;
+  color: $base-color;
+  border: none;
+  appearance: none;
+  display: none;
+  box-shadow: $shadow;
+  padding: .8rem 1.6rem;
+
+  svg{
+    vertical-align: middle;
+  }
+
+
+  > ul {
+    display: none;
+    padding: 0;
+    list-style: none;
+
+    li{
+      width: 100%;
+      
+      button {
+        border: none;
+        appearance: none;
+        font-size: 1.6rem;
+        color: $base-color;
+        font-weight: 600;
+        background: transparent;
+        height: 3.4rem;
+
+        &:hover {
+          color: $highlight-color;
+          cursor: pointer;
+        }
+      }
+    }
+
+    ul{
+      padding: 0;
+      list-style: none;
+    }
+    
+  }
+}
+
+.listColumnMobOpen{
+  display: table;
+  text-align: left;
+  > ul {
+    display: block;   
+  }
+}
+
+@include responsive(tablet){
+  .listColumn{
+    display: none;
+  }
+
+  .listColumnMob{
+    width: 40rem; 
+    display: block;   
+  }  
+
+  .contentColumn {
+    margin-top: 3.2rem;
+    width: 100%;
+  }
+}
+
+@include responsive(mobile){
+  .listColumn{
+    display: none;
+  }
+
+  .listColumnMob{
+    width: 100%;  
+    display: block;  
+  }  
+
+  .contentColumn {
+    margin-top: 3.2rem;
+    width: 100%;
+  }
+}

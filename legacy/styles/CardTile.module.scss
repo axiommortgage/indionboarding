@@ -1,0 +1,107 @@
+@import 'theme';
+@import 'mixins';
+
+.cardTile{
+  width: calc(12.5% - 3.2rem) !important;
+  margin: 0 1.6rem 2.4rem;
+  padding: 0;
+  display: block;
+  text-align: center;
+  transition: all .2s ease-out;
+
+  .cardBody{
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-radius: .8rem;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: $shadow-large, inset .2rem .2rem .1rem -.1rem rgba(255,255,255,0.6) !important;
+
+    img{
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }  
+
+  h3{
+    font-family: $display-font;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $base-color;
+  }
+
+  &:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
+
+@include responsive(desktop){
+  .cardTile{
+    width: calc(12.5% - 3.2rem) !important;
+    margin: 0 1.6rem 2.4rem;
+  }
+}
+
+@include responsive(tablet){
+  .cardTile{
+    width: calc(16.6% - 3.2rem) !important;
+    margin: 0 1.6rem 2.4rem;
+  }
+}
+
+@include responsive(mobile){
+  .cardTile{
+    width: calc(33% - 3.2rem) !important;
+    margin: 0 1.6rem 2.4rem;
+  }
+}
+
+.gradientGreen{
+  background: $gradient-green;  
+}
+.gradientPurple{
+  background: $gradient-purple;  
+}
+.gradientRed{
+  background: $gradient-red;  
+}
+.gradientTeal{
+  background: $gradient-teal;  
+}
+.gradientBlue{
+  background: $gradient-blue;  
+}
+.gradientBlueDark{
+  background: $gradient-blue-dark;  
+}
+.gradientBronze{
+  background: $gradient-bronze;  
+}
+.gradientLilac{
+  background: $gradient-lilac;  
+}
+.gradientPink{
+  background: $gradient-pink;  
+}
+.gradientYellow{
+  background: $gradient-yellow;  
+}
+.gradientDark{
+  background: $gradient-dark;  
+}
+
+.transparent {
+  background: transparent !important;
+  box-shadow: 0 0 0 transparent !important;
+  box-shadow: 0 0 0 transparent,  0 0 0 transparent !important;
+
+}
+
+.cardShadow {
+
+  .ax_card_icon{
+    transform: translateX(6%)
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "pages/*.js": {
+      "maxDuration": 60
+    }
+  }
+}

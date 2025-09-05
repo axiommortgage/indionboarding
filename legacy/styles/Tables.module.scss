@@ -1,0 +1,115 @@
+@import 'theme';
+
+.table{
+  font-family: 'montserrat', sans-serif;
+  font-size: 1.2rem;
+  
+  td{
+    height: 4.8rem;
+    vertical-align: middle; 
+    padding: 0 1.6rem;
+
+    &:first-child{
+      font-weight: 800;
+    } 
+
+    svg{
+      vertical-align: middle;
+      fill: $mid-gray;
+    } 
+
+    a{
+      color: $highlight-dark;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+  tr{
+    &:nth-child(odd){
+      td{
+        background: $light-gray;
+      }
+    }
+  }
+
+  th{
+    text-align: left;
+    background: black;
+    color: white;
+    height: 4rem;
+    padding: 0 1.6rem;
+  }
+}
+
+.checklistTable{
+  td{
+    &:nth-child(2){
+      text-align: center;
+      color: $gray;
+    }
+
+    &:nth-child(3){
+      text-align: center;
+      color: $gray;
+
+    }
+  }
+}
+
+.disabled {  
+  tr{
+    th{
+      background: $light-gray;
+    }
+    td, th {
+      color: $mid-gray;
+      a{
+        color: $mid-gray;
+        pointer-events: none;
+      }
+      svg{
+        fill: $mid-gray
+      }
+    }
+  }
+  &:hover {
+    cursor: not-allowed;
+  }
+}
+
+.warning{
+  color: #BA7C00;
+  svg{
+    fill: #BA7C00;
+  }
+}
+
+.formsList{
+  width: 100%;
+  display:block;
+  overflow-X: scroll;
+}
+
+.formsTable{
+  tr{
+    th{
+      background: transparent;
+      border-bottom: .2rem solid $light-gray;
+      color: $base-color;
+    }
+  }
+  tr{   
+    td{
+      background: transparent;
+      border-bottom: .1rem solid $light-gray;
+    }   
+    
+    &:nth-child(odd){
+      td{
+        background: transparent;
+      } 
+    }
+  }
+}
